@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Javascript Cashier</title>
+</head>
+<body>
+  <div class="box">
+        <h1>Native Javascript Cashier App</h1>
+        
+        <table id="tabel"></table>
+        <table id="tabelTwo">
+          <tr>
+            <th width="601.5px">Tambah Barang</th>
+            <th>Total Bayar</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="container">
+                <input class="form-tambah" type="text" name="barang" placeholder="input Barang..." />
+                <input class="form-tambah" type="text" name="harga" placeholder="input Harga..." />
+              </div>
+              <button class="btn-tambah" onclick="tambah()">Tambah</button>
+            </td>
+            <td>
+              <div class="proses-container">
+                <label for="jml-barang">Jumlah Barang :</label>
+                <input type="text" class="form-proses" id="jml-barang" disabled/>
+              </div>
+              <div>
+                <label for="tot-harga">Total Harga :</label>
+                <input type="text" class="form-proses" id="tot-harga" disabled/>
+              </div>
+              <button class="btn-tambah" onclick="proses()">Prosess</button>
+            </td>
+          </tr>
+        </table>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
